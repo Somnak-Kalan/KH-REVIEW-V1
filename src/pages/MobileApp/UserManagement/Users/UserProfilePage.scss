@@ -1,0 +1,611 @@
+.ph-card.ant-card {
+    border-radius: 14px;
+    border: 1px solid #f0f0f0;
+    box-shadow: none;
+    background: #fff;
+}
+
+.ph-card .ant-card-body {
+    padding: 18px 22px;
+
+}
+
+/* 3 columns: avatar | main | right */
+.ph-grid {
+    display: grid;
+    grid-template-columns: 70px 1fr auto;
+    gap: 14px 18px;
+    align-items: start;
+}
+
+/* avatar */
+.ph-avatar {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ph-avatar-circle {
+    background: #eaf3ff !important;
+    color: #2b6cb0 !important;
+    font-weight: 700;
+}
+
+/* main */
+.ph-main {
+    min-width: 0;
+}
+
+/* name + nickname same row */
+.ph-name-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ph-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+}
+
+.ph-nickname {
+    font-size: 12px;
+    font-weight: 500;
+    color: #3b82f6;
+}
+
+/* pills UNDER name */
+.ph-pills-row {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ph-pill.ant-tag {
+    margin: 0 !important;
+    padding: 2px 10px !important;
+    border-radius: 999px !important;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* meta row */
+.ph-meta-row {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    color: #4A5565;
+    font-size: 13px;
+}
+
+.ph-meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    font-size: 12.25px;
+}
+
+.ph-meta-icon {
+    color: #9ca3af;
+    font-size: 12.25px;
+}
+
+/* right column stacked */
+.ph-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    min-width: 260px;
+    /* keeps layout like screenshot */
+}
+
+/* dots at very top-right */
+.ph-dots {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ph-dots-btn {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* followings pill under dots */
+.ph-follow-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 12px;
+    background: #F8FAFD;
+}
+
+.ph-follow-icon {
+    color: #9ca3af;
+}
+
+.ph-follow-label {
+    color: #4A5565;
+    font-size: 12px;
+}
+
+.ph-follow-value {
+    font-weight: 700;
+    color: #111827;
+    font-size: 13px;
+}
+
+/* dates on one line */
+.ph-dates {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #9ca3af;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.ph-date-label {
+    color: #9ca3af;
+}
+
+
+///section tap
+/* make container fully round */
+.profile-segmented.ant-segmented {
+    border-radius: 999px !important;
+
+}
+
+.dark .profile-segmented.ant-segmented {
+    border-radius: 999px !important;
+    background: #001529;
+    color: #94a3b8;
+    font-weight: bold;
+
+}
+
+/* each item also round */
+.profile-segmented .ant-segmented-item {
+    border-radius: 999px !important;
+
+}
+
+/* selected item becomes pill */
+.profile-segmented .ant-segmented-item-selected {
+    border-radius: 999px !important;
+    overflow: hidden;
+
+}
+
+/* label area also rounded (this is the visible part) */
+.profile-segmented .ant-segmented-item-selected .ant-segmented-item-label {
+    border-radius: 999px !important;
+
+
+}
+
+.dark .profile-segmented .ant-segmented-item-selected .ant-segmented-item-label {
+    border-radius: 999px !important;
+    background: #94a3b8;
+
+}
+
+/* optional: smoother look */
+.profile-segmented .ant-segmented-thumb {
+    border-radius: 999px !important;
+
+}
+
+.dark .profile-segmented .ant-segmented-thumb {
+    border-radius: 999px !important;
+    background-color: #94a3b8;
+    ;
+
+
+}
+
+/* hover text */
+.dark .profile-segmented .ant-segmented-item:not(.ant-segmented-item-selected):hover .ant-segmented-item-label {
+    color: #94a3b8;
+}
+
+///section tap
+/// 
+/* ===== Timeline Item (match screenshot) ===== */
+
+.ti-row {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+}
+
+.dark .ti-row {
+    width: 100%;
+    background: #0f172a;
+    border: 1px solid #e2e8f057;
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+}
+
+
+.ti-left {
+    display: flex;
+    gap: 12px;
+    min-width: 0;
+}
+
+.ti-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: #f5f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    margin-top: 2px;
+}
+
+.ti-icon {
+    font-size: 16px;
+}
+
+/* icon colors like screenshot feeling */
+.ti-view {
+    color: #3b82f6;
+}
+
+.ti-review {
+    color: #f59e0b;
+}
+
+.ti-share {
+    color: #6b7280;
+}
+
+.ti-save {
+    color: #f59e0b;
+}
+
+.ti-comment {
+    color: #22c55e;
+}
+
+.ti-like {
+    color: #ef4444;
+}
+
+.ti-content {
+    min-width: 0;
+}
+
+.ti-title {
+    font-weight: 600;
+    color: #111827;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.dark .ti-title {
+    color: #9ca3af;
+
+}
+
+.ti-tags {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* small gray tags like screenshot */
+.ti-tag.ant-tag {
+    margin: 0 !important;
+    padding: 2px 10px !important;
+    border-radius: 999px !important;
+    font-size: 11px;
+    color: #111827;
+    // font-weight: bold;
+    background: #f3f4f6 !important;
+    border: 1px solid #eef0f2 !important;
+}
+
+.dark .ti-tag.ant-tag {
+    color: #111827;
+    // font-weight: bold;
+    background: #9ca3af !important;
+    border: 1px solid #9ca3af !important;
+}
+
+.ti-place {
+    font-size: 12px !important;
+    color: #9ca3af !important;
+}
+
+.ti-desc {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #6b7280;
+    max-width: 820px;
+    line-height: 1.5;
+}
+
+/* thumbnails row */
+.ti-images {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.ti-thumb {
+    width: 54px !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Ant Image renders <img> inside */
+.ti-thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* right column */
+.ti-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-width: 140px;
+    gap: 8px;
+}
+
+.ti-rating {
+    background: #2563eb;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 3px 10px;
+}
+
+.ti-time {
+    color: #9ca3af;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .ti-row {
+        grid-template-columns: 1fr;
+    }
+
+    .ti-right {
+        min-width: 0;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ti-time {
+        white-space: normal;
+    }
+}
+
+/* ===== END Timeline Item (match screenshot) ===== */
+
+/* pills row under name */
+.ph-pills-row {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* shared pill style */
+.ph-pill-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 22px;
+    /* = same height like screenshot */
+    padding: 0 10px;
+    border-radius: 6px;
+    /* = NOT full pill, screenshot is slightly rounded */
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+
+/* icon inside normal */
+.ph-pill-img {
+    width: 14px !important;
+    height: 14px !important;
+    display: block;
+}
+
+/* normal pill */
+.ph-pill-normal {
+    background: #ffffff;
+    border-color: #e5e7eb;
+    /* light gray border */
+    color: #374151;
+}
+
+/* active pill */
+.ph-pill-active {
+    background: #e8fff1;
+    /* soft green background */
+    border-color: #34c759;
+    /* green border */
+    color: #16a34a;
+    font-weight: 600;
+
+}
+
+/* inactive pill (if you want) */
+.ph-pill-inactive {
+    background: #f3f4f6;
+    border-color: #e5e7eb;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.ph-pill-text {
+    display: inline-block;
+    transform: translateY(-0.5px);
+    /* tiny vertical align like UI */
+}
+
+
+///
+/// account tabs
+/// 
+/// 
+.compact-tabs .ant-tabs-nav {
+    margin: 0 !important;
+    /* removes big gap under tab bar */
+    padding: 0 0px;
+    /* left/right spacing (optional) */
+    min-height: auto !important;
+
+}
+
+.compact-tabs .ant-card .ant-card-body {
+    padding: 0px !important;
+}
+
+.compact-tabs .ant-tabs-tab {
+    padding: 2px 0px !important;
+    /* reduces tab height */
+}
+
+.compact-tabs .ant-tabs-content-holder {
+    padding-top: 0 !important;
+    /* remove extra space before content */
+}
+
+.compact-tabs .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    font-weight: bold;
+}
+
+.compact-tabs .ant-tabs-nav {
+    margin: 0 !important;
+    font-weight: bold;
+}
+
+/* DARK MODE for compact tabs */
+.dark .compact-tabs .ant-tabs-nav {
+    background: transparent;
+
+}
+
+.dark .compact-tabs .ant-tabs-nav::before {
+    border-bottom: 1px solid #1f2937;
+    /* slate-800 line */
+}
+
+/* normal tab text */
+.dark .compact-tabs .ant-tabs-tab {
+    color: #94a3b8;
+    /* slate-400 */
+}
+
+/* hover */
+.dark .compact-tabs .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    color: #e2e8f0;
+    font-weight: bold;
+    /* slate-200 */
+}
+
+/* active tab text */
+.dark .compact-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #e2e8f0 !important;
+    /* slate-200 */
+    font-weight: bold;
+}
+
+/* ink bar color */
+.dark .compact-tabs .ant-tabs-ink-bar {
+    background: #94a3b8;
+
+    /* slate-400 */
+}
+
+/* remove extra space under tab bar (if you want same compact look) */
+.dark .compact-tabs .ant-tabs-nav {
+    margin: 0 !important;
+    font-weight: bold;
+}
+
+//
+.status-user-profile .ph-pill-inactive {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+}
+
+//
+// CONTENT CREATOR
+//
+.ph-pill-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid #B9F8CF;
+    min-height: 5px;
+
+}
+
+.ph-pill-normal {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+}
+
+.ph-pill-creator {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+}
+
+.ph-pill-creator .ph-pill-text,
+.ph-pill-creator .ph-pill-icon {
+    color: #1d4ed8;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.ph-pill-normal .ph-pill-text {
+    color: #475569;
+}
+
+.ph-pill-icon {
+    font-size: 20px;
+    line-height: 1;
+}

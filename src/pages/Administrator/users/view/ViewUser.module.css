@@ -1,0 +1,18 @@
+.draggableTab {
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    background: #000;
+}
+
+.draggableTab:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: transform 0.2 ease;
+    /* Change background on hover */
+
+}
+
+.draggableTab:active {
+    background-color: #e6f7ff;
+    /* Active state */
+    transform: scale(1.05);
+}

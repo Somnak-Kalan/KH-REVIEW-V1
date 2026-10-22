@@ -1,0 +1,18 @@
+{
+    "Address": {
+        "coordinates": "13.3536007,103.8575665",
+        "googleMap": "https://maps.app.goo.gl/XHN9rF6KZ4xAuEqNA",
+        "googlePlaceLink": "https://www.google.com/maps/place/%E",
+        "location": {
+            "provinceId": 1234,
+            "provinceEn": "RTK",
+            "provinceKh": "Kh",
+            "districtId": 12432,
+            "districtEn": "En",
+            "districtKh": "Kh",
+            "communeId": 12312,
+            "communeEn": "En",
+            "communeKh": "Kh"
+        }
+    }
+}

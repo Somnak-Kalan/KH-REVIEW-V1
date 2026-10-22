@@ -1,0 +1,90 @@
+.app-loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.app-loading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 22px;
+  border-radius: 14px;
+}
+
+/* container for logo + spinner around it */
+.app-loading-logo-wrap {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  display: grid;
+  place-items: center;
+}
+
+/* rotating arc AROUND the logo */
+.app-loading-arc-around {
+  --size: 110px;
+  --thickness: 5px;
+  --color: #167BFE;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  animation: arc-rotate 0.9s linear infinite;
+
+  /* arc segment */
+  background: conic-gradient(from 90deg,
+      var(--color) 0 55deg,
+      transparent 55deg 360deg);
+
+  /* make it a ring */
+  -webkit-mask: radial-gradient(farthest-side,
+      transparent calc(100% - var(--thickness)),
+      #000 calc(100% - var(--thickness)));
+  mask: radial-gradient(farthest-side,
+      transparent calc(100% - var(--thickness)),
+      #000 calc(100% - var(--thickness)));
+}
+
+/* subtle full ring track behind */
+.app-loading-arc-around::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.08);
+}
+
+/* circle around logo */
+.app-loading-logo-ring {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.app-loading-text {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+@keyframes arc-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,159 @@
+// src/pages/ReviewManagement/allReview/detail/reviewDetail.scss
+
+.review-detail-page {
+    .ant-image {
+        display: block;
+    }
+
+    .ant-image-img {
+        display: block;
+    }
+}
+
+.review-image-preview-modal {
+    width: min(95vw, 980px) !important;
+
+    .ant-modal-content {
+        padding: 12px;
+        border-radius: 14px;
+    }
+
+    .ant-modal-header {
+        margin-bottom: 12px;
+    }
+
+    .ant-modal-title {
+        color: #111827;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .ant-modal-close {
+        top: 12px;
+        right: 12px;
+    }
+
+    .ant-modal-close-x {
+        font-size: 14px;
+    }
+}
+
+.review-report-modal {
+    .ant-modal-content {
+        padding: 22px 18px 16px;
+        border-radius: 15px;
+    }
+
+    .ant-modal-header {
+        margin-bottom: 14px;
+    }
+
+    .ant-modal-title {
+        color: #111827;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.review-report-table {
+    .ant-table {
+        background: transparent;
+    }
+
+    .ant-table-container {
+        border-radius: 0;
+    }
+
+    .ant-table-thead>tr>th {
+        height: 44px;
+        padding: 10px 12px;
+        color: #222222;
+        font-size: 11px;
+        font-weight: 600;
+        background: #fafafa;
+    }
+
+    .ant-table-thead>tr>th::before {
+        display: none;
+    }
+
+    .ant-table-tbody>tr>td {
+        height: 45px;
+        padding: 10px 12px;
+        color: #333333;
+        font-size: 11px;
+    }
+
+    .ant-table-tbody>tr:last-child>td {
+        border-bottom: 0;
+    }
+}
+
+.review-edit-modal,
+.review-status-modal {
+    .ant-modal-content {
+        border-radius: 14px;
+    }
+
+    .ant-modal-title {
+        color: #111827;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.dark {
+
+    .review-image-preview-modal,
+    .review-report-modal,
+    .review-edit-modal,
+    .review-status-modal {
+
+        .ant-modal-content,
+        .ant-modal-header {
+            background: #0f172a;
+        }
+
+        .ant-modal-title,
+        .ant-modal-close {
+            color: #f8fafc;
+        }
+    }
+
+    .review-report-table {
+
+        .ant-table,
+        .ant-table-container {
+            background: #0f172a;
+        }
+
+        .ant-table-thead>tr>th {
+            color: #e2e8f0;
+            background: #1e293b;
+        }
+
+        .ant-table-tbody>tr>td {
+            color: #cbd5e1;
+            background: #0f172a;
+            border-bottom-color: #334155;
+        }
+
+        .ant-table-tbody>tr:hover>td {
+            background: #172033 !important;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .review-image-preview-modal {
+        width: calc(100vw - 16px) !important;
+
+        .ant-modal-content {
+            padding: 8px;
+        }
+    }
+
+    .review-report-modal {
+        width: calc(100vw - 24px) !important;
+    }
+}

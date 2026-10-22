@@ -1,0 +1,31 @@
+// table bg odd and even
+.bg-row-odd {
+  background-color: #ebf3ff;
+}
+
+.bg-row-even {
+  background-color: transparent;
+}
+
+.ant-table-tbody>tr.ant-table-row:hover>td {
+  background: unset !important;
+}
+
+.bg-row-table-live-scan-in {
+  background-color: #a3a3a3;
+  color: white;
+}
+
+.bg-row-table-live-counting-1 {
+  background-color: #a3a3a3;
+  color: white;
+}
+
+.bg-row-table-live-counting-2 {
+  background-color: #ffe978;
+}
+
+.bg-row-table-live-print-bill {
+  background-color: #7b0c63bf;
+  color: white;
+}

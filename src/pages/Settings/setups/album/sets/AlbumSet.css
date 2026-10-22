@@ -1,0 +1,266 @@
+/* ====================================
+   Album Set modal — light mode
+==================================== */
+
+.album-set-modal-root {
+    --set-modal-bg: #ffffff;
+    --set-modal-surface: #ffffff;
+    --set-modal-border: #d9d9d9;
+    --set-modal-text: #1f2937;
+    --set-modal-muted: #8c8c8c;
+    --set-modal-primary: #1677ff;
+    --set-modal-hover: #4096ff;
+}
+
+.album-set-modal .ant-modal-content {
+    overflow: hidden;
+    border: 1px solid var(--set-modal-border);
+    border-radius: 10px;
+    background: var(--set-modal-bg);
+    color: var(--set-modal-text);
+    box-shadow:
+        0 10px 32px rgba(15, 23, 42, 0.2);
+}
+
+.album-set-modal .ant-modal-header {
+    margin-bottom: 18px;
+    background: var(--set-modal-bg);
+}
+
+.album-set-modal .ant-modal-title {
+    color: var(--set-modal-text);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.album-set-modal .ant-modal-close {
+    color: var(--set-modal-muted);
+}
+
+.album-set-modal .ant-form-item {
+    margin-bottom: 18px;
+}
+
+.album-set-modal .ant-form-item-label>label {
+    color: var(--set-modal-text);
+    font-size: 13px;
+}
+
+.album-set-modal .ant-form-item-required::before {
+    color: #ff4d4f !important;
+}
+
+.album-set-modal .ant-input,
+.album-set-modal .ant-select-selector {
+    border-color:
+        var(--set-modal-border) !important;
+    background:
+        var(--set-modal-surface) !important;
+    color: var(--set-modal-text) !important;
+}
+
+.album-set-modal .ant-input::placeholder,
+.album-set-modal .ant-select-selection-placeholder {
+    color: var(--set-modal-muted) !important;
+}
+
+.album-set-modal .ant-select-selection-item {
+    color: var(--set-modal-text);
+}
+
+.album-set-modal .ant-select-selection-item-remove {
+    color: var(--set-modal-muted);
+}
+
+.album-set-modal .ant-btn-primary {
+    border-color:
+        var(--set-modal-primary);
+    background:
+        var(--set-modal-primary);
+    color: #ffffff;
+}
+
+.album-set-modal .ant-btn-primary:hover {
+    border-color:
+        var(--set-modal-hover) !important;
+    background:
+        var(--set-modal-hover) !important;
+    color: #ffffff !important;
+}
+
+/* Select dropdown */
+
+.album-set-select-dropdown {
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+}
+
+.album-set-select-dropdown .ant-select-item {
+    color: #1f2937;
+}
+
+.album-set-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    background: #f1f5f9;
+}
+
+.album-set-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background: #dbeafe;
+    color: #1677ff;
+}
+
+/* Table */
+
+.album-set-table .ant-table-thead>tr>th {
+    background: #0f172a !important;
+    color: #e5e7eb !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.album-set-table .ant-table-tbody>tr>td {
+    color: #334155;
+    font-size: 12px;
+}
+
+.album-set-table .even-row>td {
+    background: #ffffff;
+}
+
+.album-set-table .odd-row>td {
+    background: #fafafa;
+}
+
+.album-set-name {
+    border: 0;
+    background: transparent;
+    color: #17489d;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.album-set-name:hover {
+    text-decoration: underline;
+}
+
+.album-set-tag.ant-tag {
+    margin: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #dbeafe;
+    color: #1764aa;
+    font-size: 11px;
+}
+
+.album-set-view-btn {
+    color: #16a34a !important;
+}
+
+.album-set-edit-btn {
+    color: #475569 !important;
+}
+
+.album-set-delete-btn {
+    color: #ef4444 !important;
+}
+
+/* ====================================
+   Dark mode
+==================================== */
+
+.dark .album-set-modal-root {
+    --set-modal-bg: #111827;
+    --set-modal-surface: #172033;
+    --set-modal-border: #334155;
+    --set-modal-text: #e5e7eb;
+    --set-modal-muted: #94a3b8;
+    --set-modal-primary: #2563eb;
+    --set-modal-hover: #3b82f6;
+}
+
+.dark .album-set-modal .ant-btn-default {
+    border-color: #334155;
+    background: #1e293b;
+    color: #cbd5e1;
+}
+
+.dark .album-set-modal .ant-btn-default:hover {
+    border-color: #60a5fa;
+    background: #263449;
+    color: #60a5fa;
+}
+
+.dark .album-set-select-dropdown {
+    border-color: #334155;
+    background: #172033;
+}
+
+.dark .album-set-select-dropdown .ant-select-item {
+    color: #cbd5e1;
+}
+
+.dark .album-set-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    background: #22304a;
+}
+
+.dark .album-set-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background:
+        rgba(59, 130, 246, 0.22);
+    color: #60a5fa;
+}
+
+.dark .album-set-table .ant-table {
+    background: #0f172a;
+}
+
+.dark .album-set-table .ant-table-thead>tr>th {
+    background: #111827 !important;
+    color: #e5e7eb !important;
+    border-color: #334155;
+}
+
+.dark .album-set-table .ant-table-tbody>tr>td {
+    color: #cbd5e1;
+    border-color: #273449;
+}
+
+.dark .album-set-table .even-row>td {
+    background: #0f172a;
+}
+
+.dark .album-set-table .odd-row>td {
+    background: #111827;
+}
+
+.dark .album-set-table .ant-table-tbody>tr:hover>td {
+    background: #172033 !important;
+}
+
+.dark .album-set-name {
+    color: #60a5fa;
+}
+
+.dark .album-set-tag.ant-tag {
+    background:
+        rgba(59, 130, 246, 0.18);
+    color: #93c5fd;
+}
+
+.dark .album-set-table .ant-pagination-item {
+    border-color: #334155;
+    background: #172033;
+}
+
+.dark .album-set-table .ant-pagination-item a {
+    color: #cbd5e1;
+}
+
+.dark .album-set-table .ant-pagination-item-active {
+    border-color: #3b82f6;
+}
+
+.dark .album-set-table .ant-select-selector {
+    border-color: #334155 !important;
+    background: #172033 !important;
+    color: #cbd5e1 !important;
+}

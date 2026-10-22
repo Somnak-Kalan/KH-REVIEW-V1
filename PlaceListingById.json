@@ -1,0 +1,100 @@
+{
+    "nameEn": "Chesda Coffee & Restaurant",
+    "nameKh": "ចេស្ដាកាហ្វេ & ភោជនីយដ្ឋាន",
+    "Ownership": "Private",
+    "belong_to": "Business",
+    "mainCategory": {
+        "id": 1,
+        "nameEn": "Food & Beverage",
+        "nameKh": "អាហារ និង ភេសជ្ជៈ"
+    },
+    "phone1": 87654321,
+    "phone2": 87654321,
+    "subCategory": [
+        {
+            "id": 1,
+            "nameEn": "Coffee",
+            "nameKh": "កាហ្វេ"
+        },
+        {
+            "id": 2,
+            "nameEn": "Dessert",
+            "nameKh": "ភេសជ្ជៈ"
+        }
+    ],
+    "typeOfPlace": [
+        {
+            "id": 1,
+            "nameEn": "Cafe",
+            "nameKh": "កាហ្វេ"
+        },
+        {
+            "id": 2,
+            "nameEn": "Restaurant",
+            "nameKh": "ភោជនីយដ្ឋាន"
+        }
+    ],
+    "typeOfFood": [
+        {
+            "id": 1,
+            "nameEn": "Cafe",
+            "nameKh": "កាហ្វេ"
+        },
+        {
+            "id": 2,
+            "nameEn": "Restaurant",
+            "nameKh": "ភោជនីយដ្ឋាន"
+        }
+    ],
+    "keywords": [
+        {
+            "id": 1,
+            "nameEn": "Food & Beverage",
+            "nameKh": "អាហារ និង ភេសជ្ជៈ"
+        }
+    ],
+    "activity": [
+        {
+            "id": 1,
+            "nameEn": "Food & Beverage",
+            "nameKh": "អាហារ និង ភេសជ្ជៈ"
+        }
+    ],
+    "city": {
+        "provinceId": 1,
+        "provinceKh": null,
+        "communeEn": null
+    },
+    "commune": {
+        "communeId": 1,
+        "communeKh": null,
+        "communeEn": null
+    },
+    "district": {
+        "districtId": 1,
+        "districtKh": null,
+        "districtEn": null
+    },
+    "address": {
+        "coordinates": "13.3448226,103.9199706",
+        "googleMap": "https://maps.app.goo.gl/ig5fuuyrcrA5Dz6n7",
+        "googlePlaceLink": "https://www.google.com/maps",
+        "location": [
+            17,
+            1710,
+            123
+        ]
+    },
+    "referenceLinks": [],
+    "links": [],
+    "status": "Pending",
+    "openDay": "Mon-Sun",
+    "openTime": "08:00",
+    "closeTime": "18:00",
+    "descriptionEn": "Chesda Coffee & Restaurant is a popular cafe and restaurant located in",
+    "descriptionKh": "ចេស្ដាកាហ្វេ & ភោជនីយដ្ឋាន គឺជាកាហ្វេ និងភោជនីយដ្ឋានដែលមានប្រជាប្រិយភាពស្ថិតនៅក្នុង",
+    "createdBy": "Admin",
+    "createdAt": "2024-06-20T07:22:13.000Z",
+    "updatedBy": null,
+    "remarks": null
+}

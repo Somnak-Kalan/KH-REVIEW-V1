@@ -1,0 +1,1286 @@
+.property-review-page {
+    width: 100%;
+    min-height: 400px;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.property-review-summary {
+    display: flex;
+    align-items: center;
+    min-height: 62px;
+    padding: 0 8px 14px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.property-review-overall {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 14px;
+    padding-right: 36px;
+}
+
+.property-review-stars {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.property-review-star-filled {
+    color: #ffad32;
+    font-size: 23px;
+}
+
+.property-review-star-empty {
+    color: #a8c4e0;
+    font-size: 23px;
+}
+
+.property-review-average {
+    color: #292929;
+    font-size: 27px;
+    line-height: 1;
+}
+
+.property-review-category-list {
+    display: flex;
+    align-items: center;
+}
+
+.property-review-category {
+    display: flex;
+    min-width: 106px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 0 18px;
+    border-left: 1px solid #ebebeb;
+}
+
+.property-review-category-rating {
+    color: #303030;
+    font-size: 15px;
+}
+
+.property-review-category-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #555555;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.property-review-category-icon {
+    font-size: 13px;
+}
+
+.property-review-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0 16px;
+}
+
+.property-review-selects {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.property-review-status-select {
+    width: 138px;
+}
+
+.property-review-rating-select {
+    width: 156px;
+}
+
+.property-review-checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #777777;
+}
+
+.property-review-checkboxes {
+    .ant-checkbox-wrapper {
+        color: #7b7b7b;
+        font-size: 12px;
+    }
+}
+
+.property-review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.property-review-card {
+    width: 100%;
+    padding: 10px;
+    overflow: visible;
+    background: #ffffff;
+    border: 1px solid #eef1f5;
+    border-radius: 10px;
+    box-shadow:
+        0 2px 4px rgb(17 24 39 / 4%),
+        0 4px 12px rgb(17 24 39 / 4%);
+}
+
+.property-review-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.property-review-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+///
+/// 
+.property-review-user-content {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.property-review-user-name-row {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.property-review-user-name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.property-review-created-time {
+    flex-shrink: 0;
+    color: #a0a0a0;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.property-review-user-username {
+    color: #8c8c8c;
+    font-size: 10px;
+}
+
+/// //
+
+
+
+.property-review-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.property-review-status-tag {
+    min-width: 37px;
+    margin-inline-end: 0;
+    padding: 0 7px;
+    border: 0;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 9px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.property-review-status-tag {
+    display: inline-flex;
+    min-width: 37px;
+    align-items: center;
+    justify-content: center;
+    margin-inline-end: 0;
+    padding: 0 7px;
+    border: 0;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 9px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.property-review-status-pending {
+    background: #dfa017 !important;
+    color: white !important;
+}
+
+.property-review-status-active {
+    background: #52c41a !important;
+    color: white !important;
+}
+
+.property-review-status-hidden {
+    background: #be3939 !important;
+    color: white !important;
+}
+
+.property-review-status-rejected,
+.property-review-status-inactive {
+    background: #a9a9a9 !important;
+    color: white !important;
+}
+
+.property-review-score {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #252525;
+    font-size: 14px;
+}
+
+.property-review-score {
+    .anticon {
+        color: #ffad32;
+        font-size: 18px;
+    }
+}
+
+.property-review-report-alert {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 7px 10px;
+    cursor: pointer;
+    background: #fff6f6;
+    border: 1px solid #ffcccc;
+    border-radius: 5px;
+    color: #ff3b3b;
+    font-size: 11px;
+    text-align: left;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.property-review-report-alert:hover {
+    background: #ffeded;
+    border-color: #ffaaaa;
+}
+
+.property-review-report-alert {
+    .anticon {
+        font-size: 13px;
+    }
+}
+
+.property-review-rating-breakdown {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 9px;
+    color: #555555;
+    font-size: 11px;
+}
+
+.property-review-rating-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.property-review-rating-divider {
+    color: #c4c4c4;
+}
+
+.property-review-description {
+    margin: 7px 0 0;
+    color: #3e3e3e;
+    font-size: 12px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.property-review-images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.property-review-image-root {
+    display: block;
+    width: 105px;
+    height: 105px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.property-review-image-root {
+    .ant-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.property-review-image {
+    width: 105px !important;
+    height: 105px !important;
+    object-fit: cover;
+}
+
+.property-review-footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+    color: #777777;
+    font-size: 11px;
+}
+
+.property-review-footer {
+    .anticon {
+        font-size: 14px;
+    }
+}
+
+.property-review-loading,
+.property-review-empty {
+    display: flex;
+    min-height: 280px;
+    align-items: center;
+    justify-content: center;
+}
+
+.property-review-pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 18px;
+}
+
+.property-review-report-modal {
+    .ant-modal-content {
+        padding: 20px 24px 24px;
+        border-radius: 14px;
+    }
+
+    .ant-modal-header {
+        margin-bottom: 14px;
+    }
+
+    .ant-modal-title {
+        color: #171717;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .ant-table-wrapper {
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    .ant-table-thead>tr>th {
+        padding: 15px 12px;
+        background: #fafafa;
+        color: #292929;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .ant-table-tbody>tr>td {
+        padding: 14px 12px;
+        color: #3b3b3b;
+        font-size: 11px;
+    }
+}
+
+.review-action-dropdown {
+    .ant-dropdown-menu {
+        min-width: 150px;
+        padding: 6px;
+        border-radius: 6px;
+        box-shadow:
+            0 8px 24px rgb(0 0 0 / 10%),
+            0 2px 8px rgb(0 0 0 / 6%);
+    }
+
+    .ant-dropdown-menu-item {
+        min-height: 32px;
+        padding: 7px 9px;
+        font-size: 11px;
+    }
+
+    .ant-dropdown-menu-item-icon {
+        display: inline-flex;
+        width: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ant-dropdown-menu-item-icon img {
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 900px) {
+    .property-review-summary {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .property-review-overall {
+        padding-right: 0;
+    }
+
+    .property-review-category-list {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .property-review-category:first-child {
+        border-left: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .property-review-page {
+        padding: 10px;
+    }
+
+    .property-review-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .property-review-selects {
+        width: 100%;
+    }
+
+    .property-review-status-select,
+    .property-review-rating-select {
+        width: 50%;
+    }
+
+    .property-review-checkboxes {
+        justify-content: flex-end;
+    }
+
+    .property-review-card-header {
+        align-items: flex-start;
+    }
+
+    .property-review-card-actions {
+        gap: 3px;
+    }
+
+    .property-review-rating-breakdown {
+        line-height: 1.8;
+    }
+
+    .property-review-image-root {
+        width: calc(33.333% - 3px);
+        height: 90px;
+    }
+
+    .property-review-image {
+        width: 100% !important;
+        height: 90px !important;
+    }
+}
+
+
+:is(.dark,
+    .dark-mode,
+    [data-theme='dark']) {
+    .property-review-page {
+        width: 100%;
+        min-height: 400px;
+        padding: 16px;
+        background: #001529;
+        border-radius: 10px;
+    }
+
+    .property-review-summary {
+        display: flex;
+        align-items: center;
+        min-height: 62px;
+        padding: 0 8px 14px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .property-review-overall {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        gap: 14px;
+        padding-right: 36px;
+    }
+
+    .property-review-stars {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .property-review-star-filled {
+        color: #ffad32;
+        font-size: 23px;
+    }
+
+    .property-review-star-empty {
+        color: #a8c4e0;
+        font-size: 23px;
+    }
+
+    .property-review-average {
+        color: #ffffff;
+        font-size: 27px;
+        line-height: 1;
+    }
+
+    .property-review-category-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .property-review-category {
+        display: flex;
+        min-width: 106px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        padding: 0 18px;
+        border-left: 1px solid #ebebeb;
+    }
+
+    .property-review-category-rating {
+        color: #303030;
+        font-size: 15px;
+    }
+
+    .property-review-category-label {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: #555555;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .property-review-category-icon {
+        font-size: 13px;
+    }
+
+    .property-review-toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 12px 0 16px;
+    }
+
+    .property-review-selects {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .property-review-status-select {
+        width: 138px;
+    }
+
+    .property-review-rating-select {
+        width: 156px;
+    }
+
+    .property-review-checkboxes {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: #777777;
+    }
+
+    .property-review-checkboxes {
+        .ant-checkbox-wrapper {
+            color: #7b7b7b;
+            font-size: 12px;
+        }
+    }
+
+    .property-review-list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .property-review-card {
+        width: 100%;
+        padding: 10px;
+        overflow: visible;
+        background: rgb(36, 48, 72);
+        border: 1px solid rgb(11, 18, 32);
+        border-radius: 10px;
+        box-shadow:
+            0 2px 4px rgb(17 24 39 / 4%),
+            0 4px 12px rgb(17 24 39 / 4%);
+    }
+
+    .property-review-card-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .property-review-user {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .property-review-user-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+
+    }
+
+    .property-review-user-name {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    .property-review-user-username {
+        color: #ffffff;
+    }
+
+    .property-review-created-time {
+        color: #e5e2e2;
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    .property-review-card-actions {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+    }
+
+    .property-review-status-tag {
+        min-width: 37px;
+        margin-inline-end: 0;
+        padding: 0 7px;
+        border: 0;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 9px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .property-review-status-tag.pending {
+        background: #dfa017;
+        color: white;
+    }
+
+    .property-review-status-tag.active {
+        background: #52c41a;
+        color: white;
+    }
+
+    .property-review-status-tag.hidden {
+        background: #be3939;
+        color: white;
+    }
+
+    .property-review-status-tag.rejected,
+    .property-review-status-tag.inactive {
+        background: #a9a9a9;
+        color: white;
+    }
+
+    .property-review-score {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #f0e7e7;
+        font-size: 14px;
+    }
+
+    .property-review-score {
+        .anticon {
+            color: #ffad32;
+            font-size: 18px;
+        }
+    }
+
+    .property-review-report-alert {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+        padding: 7px 10px;
+        cursor: pointer;
+        background: #fff6f6;
+        border: 1px solid #ffcccc;
+        border-radius: 5px;
+        color: #ff3b3b;
+        font-size: 11px;
+        text-align: left;
+        transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease;
+    }
+
+    .property-review-report-alert:hover {
+        background: #ffeded;
+        border-color: #ffaaaa;
+    }
+
+    .property-review-report-alert {
+        .anticon {
+            font-size: 13px;
+        }
+    }
+
+    .property-review-rating-breakdown {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 9px;
+        color: #efe7e7;
+        font-size: 11px;
+    }
+
+    .property-review-rating-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .property-review-rating-divider {
+        color: #c4c4c4;
+    }
+
+    .property-review-description {
+        margin: 7px 0 0;
+        color: #eee8e8;
+        font-size: 12px;
+        line-height: 1.7;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+    }
+
+    .property-review-images {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3px;
+        margin-top: 10px;
+    }
+
+    .property-review-image-root {
+        display: block;
+        width: 105px;
+        height: 105px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .property-review-image-root {
+        .ant-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .property-review-image {
+        width: 105px !important;
+        height: 105px !important;
+        object-fit: cover;
+    }
+
+    .property-review-footer {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 8px;
+        color: #d3cece;
+        font-size: 11px;
+    }
+
+    .property-review-footer {
+        .anticon {
+            font-size: 14px;
+        }
+    }
+
+    .property-review-loading,
+    .property-review-empty {
+        display: flex;
+        min-height: 280px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .property-review-pagination {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 18px;
+    }
+
+    .property-review-report-modal {
+        .ant-modal-content {
+            padding: 20px 24px 24px;
+            border-radius: 14px;
+        }
+
+        .ant-modal-header {
+            margin-bottom: 14px;
+        }
+
+        .ant-modal-title {
+            color: #171717;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .ant-table-wrapper {
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .ant-table-thead>tr>th {
+            padding: 15px 12px;
+            background: #fafafa;
+            color: #292929;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .ant-table-tbody>tr>td {
+            padding: 14px 12px;
+            color: #3b3b3b;
+            font-size: 11px;
+        }
+    }
+
+    .review-action-dropdown {
+        .ant-dropdown-menu {
+            min-width: 150px;
+            padding: 6px;
+            border-radius: 6px;
+            box-shadow:
+                0 8px 24px rgb(0 0 0 / 10%),
+                0 2px 8px rgb(0 0 0 / 6%);
+        }
+
+        .ant-dropdown-menu-item {
+            min-height: 32px;
+            padding: 7px 9px;
+            font-size: 11px;
+        }
+
+        .ant-dropdown-menu-item-icon {
+            display: inline-flex;
+            width: 16px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ant-dropdown-menu-item-icon img {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .property-review-summary {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .property-review-overall {
+            padding-right: 0;
+        }
+
+        .property-review-category-list {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .property-review-category:first-child {
+            border-left: 0;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .property-review-page {
+            padding: 10px;
+        }
+
+        .property-review-toolbar {
+            align-items: stretch;
+            flex-direction: column;
+        }
+
+        .property-review-selects {
+            width: 100%;
+        }
+
+        .property-review-status-select,
+        .property-review-rating-select {
+            width: 50%;
+        }
+
+        .property-review-checkboxes {
+            justify-content: flex-end;
+        }
+
+        .property-review-card-header {
+            align-items: flex-start;
+        }
+
+        .property-review-card-actions {
+            gap: 3px;
+        }
+
+        .property-review-rating-breakdown {
+            line-height: 1.8;
+        }
+
+        .property-review-image-root {
+            width: calc(33.333% - 3px);
+            height: 90px;
+        }
+
+        .property-review-image {
+            width: 100% !important;
+            height: 90px !important;
+        }
+    }
+
+}
+
+.property-review-page {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 130px);
+    min-height: 0;
+    flex-direction: column;
+
+    padding: 16px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+/*
+ * ReviewSummary never scrolls.
+ * It always stays above the toolbar and cards.
+ */
+.property-review-fixed-summary {
+    position: relative;
+    z-index: 40;
+
+    width: 100%;
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+/*
+ * Only this area scrolls.
+ */
+.property-review-scroll-content {
+    position: relative;
+
+    width: 100%;
+    min-height: 0;
+    flex: 1;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    isolation: isolate;
+    overscroll-behavior: contain;
+}
+
+/*
+ * Toolbar sticks below ReviewSummary.
+ */
+.property-review-sticky-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    transform: translateY(0);
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease;
+
+    will-change: transform;
+}
+
+/*
+ * Scroll upward:
+ * toolbar automatically appears.
+ */
+.property-review-sticky-toolbar.is-visible {
+    transform: translateY(0);
+
+    box-shadow:
+        0 4px 10px rgb(15 23 42 / 7%);
+}
+
+/*
+ * Scroll downward:
+ * toolbar moves above the scrolling area.
+ */
+.property-review-sticky-toolbar.is-hidden {
+    transform: translateY(calc(-100% - 2px));
+
+    box-shadow: none;
+}
+
+.property-review-list-content {
+    position: relative;
+    z-index: 0;
+}
+
+/*
+ * =====================================================
+ * REVIEW PAGE SCROLL LAYOUT
+ * Keep only one copy of these classes.
+ * =====================================================
+ */
+
+.property-review-page {
+    display: flex;
+    width: 100%;
+
+    /*
+     * Important:
+     * Give this page a real limited height.
+     * Do not use height: 100%.
+     */
+    height: calc(100dvh - 130px);
+    max-height: calc(100dvh - 130px);
+
+    min-width: 0;
+    min-height: 0;
+    flex: 0 0 auto;
+    flex-direction: column;
+
+    padding: 16px 16px 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/*
+ * Summary always remains visible.
+ */
+.property-review-fixed-summary {
+    position: relative;
+    z-index: 40;
+
+    width: 100%;
+    min-width: 0;
+    flex: 0 0 auto;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+/*
+ * Only toolbar and review cards scroll here.
+ */
+.property-review-scroll-content {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+
+    /*
+     * Use only the remaining space
+     * below ReviewSummary.
+     */
+    flex: 1 1 0;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    overscroll-behavior-y: contain;
+    scrollbar-gutter: stable;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*
+ * Toolbar remains at the top
+ * of the review scroll container.
+ */
+.property-review-sticky-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+
+    width: 100%;
+    min-width: 0;
+
+    background: #ffffff;
+
+    transform: translateY(0);
+    opacity: 1;
+
+    transition:
+        transform 180ms ease,
+        opacity 180ms ease,
+        box-shadow 180ms ease;
+
+    will-change:
+        transform,
+        opacity;
+}
+
+.property-review-sticky-toolbar.is-visible {
+    pointer-events: auto;
+
+    transform: translateY(0);
+    opacity: 1;
+
+    box-shadow:
+        0 4px 10px rgb(15 23 42 / 7%);
+}
+
+.property-review-sticky-toolbar.is-hidden {
+    pointer-events: none;
+
+    transform: translateY(calc(-100% - 2px));
+
+    opacity: 0;
+    box-shadow: none;
+}
+
+.property-review-list-content {
+    position: relative;
+    z-index: 0;
+
+    width: 100%;
+    min-width: 0;
+
+    /*
+     * Gives space after the final card,
+     * so its comment/report/footer can
+     * scroll completely into view.
+     */
+    padding-bottom: 100px;
+
+    box-sizing: border-box;
+}
+
+.property-review-list {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    flex-direction: column;
+    gap: 9px;
+
+    overflow: visible;
+}
+
+.property-review-card {
+    width: 100%;
+    min-width: 0;
+    flex: 0 0 auto;
+
+    overflow: visible;
+}
+
+.property-review-card:last-child {
+    margin-bottom: 24px;
+    scroll-margin-bottom: 100px;
+}
+
+.property-review-pagination {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 18px 0 24px;
+}
+
+@media (max-width: 650px) {
+    .property-review-page {
+        height: calc(100dvh - 130px);
+        max-height: calc(100dvh - 130px);
+
+        padding: 10px 10px 0;
+    }
+
+    .property-review-list-content {
+        padding-bottom: 80px;
+    }
+}
+
+:is(.dark,
+    .dark-mode,
+    [data-theme='dark']) {
+
+    .property-review-page,
+    .property-review-fixed-summary,
+    .property-review-scroll-content,
+    .property-review-sticky-toolbar {
+        background: #001529;
+    }
+}
+
+
+///
+/// 
+/// 
+/// 

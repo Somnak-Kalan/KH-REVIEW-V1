@@ -1,0 +1,266 @@
+/* =========================
+   Light mode variables
+========================= */
+.media-tabs-container {
+    --media-bg: #ffffff;
+    --media-header-bg: #ffffff;
+    --media-content-bg: #ffffff;
+
+    --media-border: #e5edf5;
+
+    --media-text: #717985;
+    --media-text-hover: #1677ff;
+    --media-text-active: #1677ff;
+
+    --media-primary: #087bff;
+    --media-primary-hover: #1677ff;
+
+    width: 100%;
+
+    border: 1px solid var(--media-border);
+    border-radius: 10px;
+    overflow: hidden;
+
+    background: var(--media-bg);
+    color: var(--media-text);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Dark mode */
+.dark .media-tabs-container,
+[data-theme='dark'] .media-tabs-container,
+.ant-app-dark .media-tabs-container {
+    --media-bg: #111827;
+    --media-header-bg: #111827;
+    --media-content-bg: #0f172a;
+
+    --media-border: #263449;
+
+    --media-text: #9ca9bc;
+    --media-text-hover: #60a5fa;
+    --media-text-active: #60a5fa;
+
+    --media-primary: #2563eb;
+    --media-primary-hover: #3b82f6;
+}
+
+
+
+.dark .media-tabs-header,
+[data-theme='dark'] .media-tabs-header,
+.ant-app-dark .media-tabs-header {
+    box-shadow: none;
+}
+
+.dark .media-tabs-content,
+[data-theme='dark'] .media-tabs-content,
+.ant-app-dark .media-tabs-content {
+    color: #d7dfeb;
+}
+
+/* Header */
+.media-tabs-header {
+    width: 100%;
+    min-height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+    padding: 0 12px 0 16px;
+
+    border-bottom: 1px solid var(--media-border);
+    background: var(--media-header-bg);
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Tabs navigation */
+.media-tabs-navigation {
+    min-width: 0;
+    height: 43px;
+
+    display: flex;
+    align-items: stretch;
+
+    gap: 38px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+}
+
+.media-tabs-navigation::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tab button */
+.media-tab-button {
+    position: relative;
+
+    height: 43px;
+    min-width: 38px;
+    flex-shrink: 0;
+
+    padding: 0;
+    border: 0;
+    outline: none;
+
+    background: transparent;
+    color: var(--media-text);
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        color 0.18s ease,
+        background-color 0.18s ease;
+}
+
+.media-tab-button:hover {
+    color: var(--media-text-hover);
+}
+
+.media-tab-button:focus-visible {
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px color-mix(in srgb,
+            var(--media-text-active) 25%,
+            transparent);
+}
+
+.media-tab-button-active {
+    color: var(--media-text-active);
+    font-weight: 500;
+}
+
+/* Active underline */
+.media-tab-button-active::after {
+    content: '';
+
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+
+    height: 2px;
+
+    border-radius: 2px 2px 0 0;
+    background: var(--media-text-active);
+}
+
+/* Right action area */
+.media-tabs-action {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.media-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Ant Design action button */
+.media-header-action.ant-btn {
+    height: 32px;
+    min-height: 32px;
+
+    padding: 0 13px;
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 30px;
+
+    box-shadow: none;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+.media-header-action.ant-btn-primary {
+    border-color: var(--media-primary);
+    background: var(--media-primary);
+    color: #ffffff;
+}
+
+.media-header-action.ant-btn-primary:hover,
+.media-header-action.ant-btn-primary:focus {
+    border-color: var(--media-primary-hover);
+    background: var(--media-primary-hover);
+    color: #ffffff;
+}
+
+.media-header-action.ant-btn-primary:disabled {
+    border-color: var(--media-border);
+    background: var(--media-border);
+    color: var(--media-text);
+    opacity: 0.65;
+}
+
+.media-header-action .anticon {
+    font-size: 11px;
+}
+
+/* Content */
+.media-tabs-content {
+    width: 100%;
+    min-width: 0;
+
+    padding-top: 14px;
+
+    background: var(--media-content-bg);
+    color: var(--media-text);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+/* Tablet and mobile */
+@media (max-width: 767px) {
+    .media-tabs-header {
+        min-height: auto;
+
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 8px;
+        padding: 0 12px 10px;
+    }
+
+    .media-tabs-navigation {
+        width: 100%;
+        height: 43px;
+        gap: 28px;
+    }
+
+    .media-tabs-action {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .media-header-actions {
+        width: 100%;
+
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}

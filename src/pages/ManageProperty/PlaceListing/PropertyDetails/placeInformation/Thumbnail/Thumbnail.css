@@ -1,0 +1,13 @@
+.schedule-thumbnail-dropdown-btn .ant-btn {
+    border: none;
+    /* remove the default border */
+    padding: 0 8px;
+    /* same padding you wanted inline */
+    background: transparent;
+    /* if you want no bg at all */
+}
+
+.schedule-thumbnail-dropdown-btn .ant-btn-variant-dashed {
+    border-color: #ffffff !important;
+    background: #ffffff !important;
+}

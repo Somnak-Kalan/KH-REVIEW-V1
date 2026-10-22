@@ -1,0 +1,327 @@
+/* =========================
+   TABS - DARK MODE
+   ========================= */
+.dark .apply-all-tabs .ant-tabs-nav .ant-tabs-tab {
+    background-color: #0f172a;
+    /* slate-900 */
+    color: #cbd5e1;
+    /* slate-300 */
+    border: 1px solid #334155;
+    /* slate-700 */
+}
+
+.dark .apply-all-tabs .ant-tabs-nav .ant-tabs-tab:hover {
+    background-color: #1e293b;
+    /* slate-800 */
+}
+
+.dark .apply-all-tabs .ant-tabs-nav .ant-tabs-tab-active {
+    background-color: #111827;
+    /* gray-900-ish */
+    border: 1px solid #334155;
+    /* slate-700 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.dark .apply-all-tabs .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #e2e8f0 !important;
+    /* slate-200 */
+}
+
+.dark .apply-all-tabs .ant-tabs-content-holder {
+    background: #0f172a;
+    /* slate-900 */
+    border: 1px solid #334155;
+    /* slate-700 */
+    padding: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* optional: tabs text when inactive */
+.dark .apply-all-tabs .ant-tabs-tab-btn {
+    color: #cbd5e1 !important;
+    /* slate-300 */
+}
+
+/* Input + TextArea placeholder */
+.dark .ant-input::placeholder,
+.dark .ant-input-textarea textarea::placeholder {
+    color: #94a3b8;
+    /* slate-400 */
+    opacity: 1;
+}
+
+
+//
+/* Dark mode: change TAB TEXT only (keep styles same) */
+/* Light table header */
+html:not(.dark) .apply-tab-text .ant-tabs-tab-btn {
+    color: #64748b !important;
+    font-weight: bold;
+}
+
+.dark .apply-tab-text .ant-tabs-tab-btn {
+    color: #64748b !important;
+    font-weight: bold;
+    /* inactive text */
+}
+
+.dark .apply-tab-text .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #94a3b8 !important;
+    font-weight: bold;
+    /* active text */
+}
+
+//end tab text 
+
+//date range  dark:mode
+/* ===== RangePicker input (dark mode) ===== */
+.dark .dark-range.ant-picker {
+    background: #0f172a !important;
+    /* slate-900 */
+    border-color: #334155 !important;
+    /* slate-700 */
+    // color: #e2e8f0 !important;
+
+    /* slate-200 */
+}
+
+.dark .dark-range.ant-picker input {
+    color: #64748b !important;
+    font-weight: 600;
+}
+
+.dark .dark-range.ant-picker input::placeholder {
+    color: #64748b !important;
+    font-weight: 600;
+    /* slate-400 */
+}
+
+.dark .dark-range.ant-picker .ant-picker-suffix,
+.dark .dark-range.ant-picker .ant-picker-clear {
+    color: #cbd5e1 !important;
+    /* slate-300 */
+}
+
+.dark .dark-range.ant-picker:hover {
+    border-color: #475569 !important;
+    /* slate-600 */
+}
+
+.dark .dark-range.ant-picker-focused {
+    border-color: #3b82f6 !important;
+    /* blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25) !important;
+}
+
+/* Optional: the "~" separator */
+.dark .dark-range.ant-picker .ant-picker-separator {
+    color: #94a3b8 !important;
+}
+
+/* ===== Optional: popup calendar panel (dark mode) ===== */
+.dark .ant-picker-dropdown .ant-picker-panel-container {
+    background: #0f172a !important;
+    border: 1px solid #334155 !important;
+}
+
+.dark .ant-picker-dropdown .ant-picker-header,
+.dark .ant-picker-dropdown .ant-picker-content th,
+.dark .ant-picker-dropdown .ant-picker-cell {
+    color: #64748b !important;
+    font-weight: 600;
+}
+
+.dark .ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border-color: #3b82f6 !important;
+}
+
+//end date range dark:mode
+//button dark:mode
+.dark .create-user-btn .ant-btn-primary {
+    background: linear-gradient(135deg, #00f5d4 0%, #3b82f6 100%) !important;
+    border: none !important;
+    color: #06121f !important;
+    /* dark text like icon */
+    font-weight: 600;
+    box-shadow: 0 10px 24px rgba(0, 245, 212, 0.18),
+        0 10px 24px rgba(59, 130, 246, 0.18) !important;
+}
+
+.dark .create-user-btn .ant-btn-primary:hover {
+    background: linear-gradient(135deg, #2fffe2 0%, #60a5fa 100%) !important;
+    box-shadow: 0 12px 28px rgba(0, 245, 212, 0.22),
+        0 12px 28px rgba(96, 165, 250, 0.22) !important;
+}
+
+.dark .create-user-btn .ant-btn-primary:active {
+    transform: translateY(1px);
+}
+
+//end button dark:mode
+//dark:mode select - ant-design
+/* ====== SELECT (dark mode) ====== */
+.dark {
+
+    // Select box (single)
+    .dark-select.ant-select {
+        .ant-select-selector {
+            background: #0f172a !important;
+            border-color: #334155 !important;
+            color: #e2e8f0 !important;
+            border-radius: 12px !important;
+        }
+
+        .ant-select-selection-item {
+            color: #64748b !important;
+            font-weight: 600;
+        }
+
+        .ant-select-selection-placeholder {
+            color: #94a3b8 !important;
+        }
+
+        .ant-select-arrow,
+        .ant-select-clear {
+            color: #cbd5e1 !important;
+
+        }
+
+        &:hover .ant-select-selector {
+            border-color: #475569 !important;
+        }
+
+        &.ant-select-focused .ant-select-selector {
+            border-color: #3b82f6 !important;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25) !important;
+        }
+    }
+
+    // Dropdown panel (IMPORTANT: portal in body)
+    .ant-select-dropdown {
+        background: #0f172a !important;
+        border: 1px solid #334155 !important;
+
+        .ant-select-item {
+            color: #64748b !important;
+            font-weight: 600;
+        }
+
+        .ant-select-item-option-active {
+            background: rgba(59, 130, 246, 0.15) !important;
+        }
+
+        .ant-select-item-option-selected {
+            background: rgba(59, 130, 246, 0.22) !important;
+            color: #e2e8f0 !important;
+        }
+    }
+}
+
+html:not(.dark) {
+
+    // Select box (single)
+    .dark-select.ant-select {
+        .ant-select-selector {
+            color: #e2e8f0 !important;
+        }
+
+        .ant-select-selection-item {
+            color: #64748b !important;
+            font-weight: 600;
+        }
+
+        .ant-select-selection-placeholder {
+            color: #94a3b8 !important;
+        }
+
+        .ant-select-arrow,
+        .ant-select-clear {
+            color: #cbd5e1 !important;
+
+        }
+
+        &:hover .ant-select-selector {
+            border-color: #475569 !important;
+        }
+
+        &.ant-select-focused .ant-select-selector {
+            border-color: #3b82f6 !important;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25) !important;
+        }
+    }
+
+    // Dropdown panel (IMPORTANT: portal in body)
+    .ant-select-dropdown {
+        .ant-select-item {
+            color: #64748b !important;
+            font-weight: 600;
+        }
+
+        .ant-select-item-option-active {
+            background: rgba(59, 130, 246, 0.15) !important;
+        }
+
+        .ant-select-item-option-selected {
+            background: rgba(59, 130, 246, 0.22) !important;
+            color: #334155 !important;
+        }
+    }
+}
+
+/* Select placeholder */
+.dark .ant-select .ant-select-selection-placeholder {
+    color: #94a3b8;
+}
+
+/* Input + TextArea placeholder */
+.dark .ant-input::placeholder,
+.dark .ant-input-textarea textarea::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+/* Select placeholder */
+.dark .ant-select .ant-select-selection-placeholder {
+    color: #94a3b8;
+}
+
+//end dark:mode select - ant-design
+//----------------breadcrumb-------------
+/* Light mode */
+.breadcrumb-widget .ant-breadcrumb,
+.breadcrumb-widget .ant-breadcrumb a,
+.breadcrumb-widget .ant-breadcrumb span {
+    color: #64748b !important;
+    font-weight: 600;
+    /* slate-500 */
+}
+
+.breadcrumb-widget .ant-breadcrumb a:hover {
+    color: #1677ff !important;
+}
+
+/* Last item (current page) */
+.breadcrumb-widget .ant-breadcrumb li:last-child span {
+    color: #0f172a !important;
+    /* slate-900 */
+    font-weight: 600;
+}
+
+/* Dark mode */
+.dark .breadcrumb-widget .ant-breadcrumb,
+.dark .breadcrumb-widget .ant-breadcrumb a,
+.dark .breadcrumb-widget .ant-breadcrumb span {
+    color: #94a3b8 !important;
+    /* slate-400 */
+}
+
+.dark .breadcrumb-widget .ant-breadcrumb li:last-child span {
+    color: #d0d7e0 !important;
+    font-weight: 600;
+    /* slate-200 */
+}
+
+// --------------------breadcrumb--------------------

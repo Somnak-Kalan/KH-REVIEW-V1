@@ -1,0 +1,142 @@
+.apply-all-tabs .ant-tabs-nav .ant-tabs-tab {
+  /* Basic "pill" shape for each tab */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 10px 16px;
+  border: none;
+  margin-right: 8px;
+  background-color: #f6f6f6;
+  /* default background for inactive tabs */
+  transition: background-color 0.3s ease;
+}
+
+/* Active tab styling */
+.apply-all-tabs .ant-tabs-nav .ant-tabs-tab-active {
+  background-color: #ffffff;
+  /* active background color */
+  border: none;
+  /* Optionally add a drop shadow or highlight */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.apply-all-tabs .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: black !important;
+}
+
+/* Remove the default Ant Design underline/ink-bar */
+.apply-all-tabs .ant-tabs-nav .ant-tabs-ink-bar {
+  display: none !important;
+}
+
+/* Optional: Hover effect for tabs */
+.apply-all-tabs .ant-tabs-nav .ant-tabs-tab:hover {
+  background-color: #e8e8e8;
+}
+
+.apply-all-tabs .ant-tabs-content-holder {
+  background: white;
+  padding: 16px;
+  // border-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apply-all-tabs .ant-tabs-nav {
+  margin: 0 0 0px 0 !important;
+}
+
+//
+/* Make every ascending and descending arrow red */
+.column-sort .ant-table-column-sorter-up,
+.column-sort .ant-table-column-sorter-down {
+  color: white !important;
+}
+
+//ant-design dark mode for modals and inputs
+.dark .ant-modal-content {
+  background: #0f172a !important;
+  /* slate-900 */
+  color: #e2e8f0 !important;
+  /* slate-200 */
+}
+
+.dark .ant-modal-header {
+  background: #0f172a !important;
+  border-bottom: 1px solid #334155 !important;
+  /* slate-700 */
+}
+
+.dark .ant-modal-title {
+  color: #e2e8f0 !important;
+}
+
+.dark .ant-modal-close-x {
+  color: #e2e8f0 !important;
+}
+
+///
+/// /* INPUT + LABEL dark mode */
+.dark .ant-form-item-label>label {
+  color: #e2e8f0 !important;
+  /* slate-200 */
+}
+
+.dark .ant-input,
+.dark .ant-input-affix-wrapper {
+  background: #0f172a !important;
+  /* slate-900 */
+  color: #e2e8f0 !important;
+  /* slate-200 */
+  border-color: #334155 !important;
+  /* slate-700 */
+}
+
+.no-dark .ant-input,
+.no-dark .ant-input-affix-wrapper {
+  background: #fff !important;
+  color: #111827 !important;
+  border-color: #d9d9d9 !important;
+}
+
+.no-dark .ant-form-item-label>label {
+  color: #111827 !important;
+}
+
+
+.ant-input::placeholder {
+  color: #9ca3af !important;
+  /*  gray placeholder */
+}
+
+
+.dark .ant-input::placeholder {
+  color: #64748b !important;
+  /* slate-500 */
+}
+
+.dark .ant-input-affix-wrapper:hover,
+.dark .ant-input:hover {
+  border-color: #475569 !important;
+  /* slate-600 */
+}
+
+.dark .ant-input-affix-wrapper-focused,
+.dark .ant-input:focus {
+  border-color: #3b82f6 !important;
+  /* blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25) !important;
+}
+
+/* ERROR MESSAGE in dark mode */
+.dark .ant-form-item-explain-error {
+  color: #fca5a5 !important;
+  /* red-300 (soft) */
+}
+
+/// 
+/// z                                                                    
+/// 
+/// 
+/// 
+/// 

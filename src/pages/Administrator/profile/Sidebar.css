@@ -1,0 +1,66 @@
+/* Sidebar.css or inline styles */
+.custom-menu {
+    background-color: #FFFFFF !important;
+    border-radius: 8px;
+    /* Set menu background color to black */
+}
+
+.custom-menu .ant-menu {
+    background-color: #FFFFFF !important;
+
+}
+
+.custom-menu .ant-menu-light.ant-menu-inline {
+    border-inline-end: none !important;
+}
+
+
+
+
+.custom-menu .ant-menu-item-selected {
+    background-color: #f79421ff !important;
+    color: #FFFFFF !important;
+}
+
+
+
+.custom-menu {
+    max-height: 300px;
+    /* Adjust height as needed */
+    overflow-y: auto;
+}
+
+@media (max-width: 400px) {
+    .custom-menu {
+        max-height: 200px;
+        /* Adjust for smaller screens */
+    }
+
+}
+
+.custom-result .anticon svg {
+    font-size: 20px !important;
+    /* Change this to your desired icon size */
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateX(10px);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 300ms, transform 300ms;
+}

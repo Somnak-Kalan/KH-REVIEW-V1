@@ -1,0 +1,252 @@
+.theme-management-page {
+    padding: 0 16px 24px;
+}
+
+.theme-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-bottom: 12px;
+}
+
+.theme-search {
+    width: 380px;
+    max-width: 100%;
+}
+
+.theme-card {
+    background: #ffffff;
+    border-radius: 8px;
+    min-height: calc(100vh - 170px);
+    padding: 0 18px 18px;
+}
+
+.theme-management-tabs {
+    .ant-tabs-nav {
+        margin: 0 0 14px;
+    }
+
+    .ant-tabs-tab {
+        padding: 16px 8px 10px;
+        font-weight: 600;
+    }
+
+    .ant-tabs-tab+.ant-tabs-tab {
+        margin-left: 32px;
+    }
+}
+
+.theme-table {
+    .ant-table {
+        font-size: 12px;
+    }
+
+    .ant-table-container {
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .ant-table-thead>tr>th {
+        background: #101827 !important;
+        color: #ffffff !important;
+        font-size: 12px;
+        font-weight: 600;
+        border-bottom: 0 !important;
+        padding: 12px 10px;
+    }
+
+    .ant-table-tbody>tr>td {
+        color: #40516a;
+        font-size: 12px;
+        padding: 8px 10px;
+        border-bottom: 1px solid #f0f2f5;
+        vertical-align: middle;
+    }
+
+    .ant-table-tbody>tr:hover>td {
+        background: #ffffff !important;
+    }
+}
+
+.theme-name-cell {
+    color: #202631;
+    line-height: 1.2;
+
+    small {
+        display: block;
+        margin-top: 2px;
+        color: #4c5668;
+        font-size: 11px;
+    }
+}
+
+.theme-thumbnail {
+    width: 54px;
+    height: 34px;
+    border-radius: 3px;
+    object-fit: cover;
+    display: block;
+}
+
+.theme-thumbnail-empty {
+    width: 54px;
+    height: 34px;
+    border: 1px dashed #91caff;
+    background: #edf6ff;
+    border-radius: 3px;
+    color: #1677ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-action-btn {
+    border-width: 1px;
+    background: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-action-add {
+    color: #1677ff;
+    border-color: #1677ff;
+}
+
+.theme-action-view {
+    color: #fa8c16;
+    border-color: #fa8c16;
+}
+
+.theme-action-edit {
+    color: #111827;
+    border-color: #d9d9d9;
+}
+
+.theme-action-delete {
+    color: #ff4d4f;
+    border-color: #ff4d4f;
+}
+
+.theme-modal {
+    .ant-modal-title {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .ant-form-item {
+        margin-bottom: 14px;
+    }
+
+    .ant-form-item-label>label {
+        font-size: 13px;
+        color: #2f3542;
+    }
+}
+
+.theme-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    padding-top: 6px;
+}
+
+.theme-upload-box {
+    width: 100%;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    background: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.theme-upload-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #2f3542;
+    font-size: 12px;
+}
+
+.theme-upload-remove {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.35);
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-view-item {
+    margin-bottom: 14px;
+}
+
+.theme-view-label {
+    font-size: 13px;
+    color: #2f3542;
+    margin-bottom: 8px;
+
+    span {
+        color: #ff4d4f;
+    }
+}
+
+.theme-view-image {
+    width: 100%;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.theme-view-empty {
+    width: 100%;
+    height: 112px;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+.theme-empty {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ant-empty-description {
+        color: #8b95a7;
+        font-size: 12px;
+    }
+}
+
+///
+
+/// 

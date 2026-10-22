@@ -1,0 +1,89 @@
+.ant-drawer-content-wrapper {
+    box-shadow: none !important;
+}
+
+.ant-float-btn-default {
+    display: none !important;
+}
+
+.ant-float-btn {
+    display: none !important;
+}
+
+.creatorRequest .ant-float-btn-body {
+    display: none !important;
+}
+
+html {
+    scroll-behavior: auto !important;
+}
+
+html,
+body {
+    overscroll-behavior-y: none;
+}
+
+.ant-drawer,
+.ant-drawer-content,
+.ant-drawer-body {
+    overscroll-behavior: contain;
+}
+
+
+.ant-drawer-content-wrapper {
+    box-shadow: none !important;
+}
+
+.ant-float-btn {
+    display: none !important;
+}
+
+html {
+    scroll-behavior: auto !important;
+}
+
+html,
+body {
+    overscroll-behavior-y: none;
+}
+
+.ant-drawer,
+.ant-drawer-content,
+.ant-drawer-body {
+    overscroll-behavior: contain;
+}
+
+.province-scroll-area {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+
+/* normal drawer animation when open */
+.province-drawer .ant-drawer-mask,
+.province-drawer .ant-drawer-content-wrapper,
+.province-drawer .ant-drawer-content {
+    animation-duration: inherit;
+    transition-duration: inherit;
+}
+
+/* no motion only when search is focused  */
+.province-drawer.province-drawer-searching .ant-drawer-mask,
+.province-drawer.province-drawer-searching .ant-drawer-content-wrapper,
+.province-drawer.province-drawer-searching .ant-drawer-content,
+.province-drawer.province-drawer-searching .ant-drawer-body {
+    animation: none !important;
+    transition: none !important;
+}
+
+.province-drawer.province-drawer-searching .ant-drawer-content-wrapper {
+    will-change: auto !important;
+}
+
+.tiktok-field .ant-form-item-explain,
+.tiktok-field .ant-form-item-extra {
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    padding-bottom: 0px;
+    width: 100%;
+}

@@ -1,0 +1,397 @@
+.album-tabs-ui .ant-tabs-nav {
+    margin-bottom: 14px !important;
+}
+
+.album-tabs-ui .ant-tabs-nav::before {
+    border-bottom: 1px solid #eef1f5 !important;
+}
+
+.album-tabs-ui .ant-tabs-ink-bar {
+    height: 2px !important;
+    border-radius: 2px;
+}
+
+.album-tabs-ui .ant-tabs-tab {
+    margin: 0 !important;
+    padding: 6px 9px !important;
+    border-radius: 6px;
+    background: #f7f8fa;
+}
+
+.album-tabs-ui .ant-tabs-tab-active {
+    background: #eef5ff;
+}
+
+.album-tab-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.album-tab-count.ant-tag {
+    min-width: 21px;
+    height: 21px;
+    margin: 0;
+    padding: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    background: #fff;
+    color: #606b7a;
+    font-size: 11px;
+    line-height: 19px;
+}
+
+.album-all-groups {
+    padding-top: 2px;
+}
+
+.album-all-group {
+    margin-bottom: 22px;
+}
+
+.album-group-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.album-group-title.ant-typography {
+    margin: 0 !important;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.album-group-kh {
+    font-size: 12px;
+}
+
+.album-gallery-empty {
+    padding: 38px 16px;
+    border: 1px dashed #d9d9d9;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.album-selection-toolbar {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.album-selection-count {
+    color: #111827;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.album-selection-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.album-selection-actions .ant-btn {
+    height: 30px;
+    padding-inline: 9px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.album-select-all-checkbox {
+    pointer-events: none;
+}
+
+.album-image-grid {
+    display: grid;
+    grid-template-columns: repeat(5,
+            minmax(0, 1fr));
+    gap: 10px;
+}
+
+.album-image-card {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #dce7ef;
+    border-radius: 6px;
+    background: #eef1f4;
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.album-image-card-selectable {
+    cursor: pointer;
+    outline: none;
+}
+
+.album-image-card-selectable:hover {
+    border-color: #69aefc;
+}
+
+.album-image-card-selectable:focus-visible {
+    box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.18);
+}
+
+.album-image-card-selected {
+    border-color: #1677ff;
+    box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.18);
+}
+
+.album-image-ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 63%;
+    overflow: hidden;
+}
+
+.album-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.album-preview-button {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    z-index: 3;
+    height: 20px;
+    padding: 0 8px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(32, 38, 45, 0.64);
+    color: #fff;
+    font-size: 9px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.album-preview-button:hover {
+    background: rgba(22, 119, 255, 0.82);
+}
+
+.album-image-check {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    z-index: 4;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    background: rgba(20, 24, 31, 0.25);
+    color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+    font-size: 11px;
+}
+
+.album-image-check-active {
+    border-color: #1677ff;
+    background: #1677ff;
+    box-shadow: none;
+}
+
+.album-delete-modal .ant-modal-content {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.album-delete-modal .ant-modal-close {
+    top: 11px;
+    right: 11px;
+}
+
+.album-delete-content {
+    padding: 28px 28px 24px;
+    text-align: center;
+}
+
+.album-delete-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff1f0;
+    color: #ff4d4f;
+    font-size: 24px;
+}
+
+.album-delete-content h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.album-delete-content p {
+    margin: 0 0 20px;
+    color: #727b89;
+    font-size: 14px;
+}
+
+.album-delete-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.album-delete-actions .ant-btn {
+    border: 0;
+    border-radius: 999px;
+}
+
+.album-delete-actions .ant-btn-default {
+    background: #f0f0f0;
+}
+
+.album-move-modal .ant-modal-content {
+    border-radius: 10px;
+}
+
+.album-move-modal .ant-modal-header {
+    margin-bottom: 18px;
+}
+
+.album-move-modal .ant-modal-title {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.album-move-field label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 7px;
+    color: #252b34;
+    font-size: 12px;
+}
+
+.album-move-field label span {
+    color: #ff4d4f;
+}
+
+.album-move-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+@media (max-width: 1200px) {
+    .album-image-grid {
+        grid-template-columns: repeat(4,
+                minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .album-image-grid {
+        grid-template-columns: repeat(3,
+                minmax(0, 1fr));
+    }
+
+    .album-selection-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .album-selection-actions {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .album-image-grid {
+        grid-template-columns: repeat(2,
+                minmax(0, 1fr));
+    }
+
+    .album-tabs-ui .ant-tabs-nav-wrap {
+        overflow-x: auto;
+    }
+}
+
+/* /// */
+/* Delete action */
+.album-delete-action-btn.ant-btn-primary.ant-btn-dangerous {
+    border-color: #ff4d4f !important;
+    background: #ff4d4f !important;
+    color: #ffffff !important;
+}
+
+.album-delete-action-btn.ant-btn-primary.ant-btn-dangerous>span,
+.album-delete-action-btn.ant-btn-primary.ant-btn-dangerous .anticon {
+    color: #ffffff !important;
+}
+
+.album-delete-action-btn.ant-btn-primary.ant-btn-dangerous:hover {
+    border-color: #ff7875 !important;
+    background: #ff7875 !important;
+    color: #ffffff !important;
+}
+
+/* Move action */
+.album-move-action-btn.ant-btn-primary {
+    border-color: #1677ff !important;
+    background: #1677ff !important;
+    color: #ffffff !important;
+}
+
+.album-move-action-btn.ant-btn-primary>span,
+.album-move-action-btn.ant-btn-primary .anticon {
+    color: #ffffff !important;
+}
+
+.album-move-action-btn.ant-btn-primary:hover {
+    border-color: #4096ff !important;
+    background: #4096ff !important;
+    color: #ffffff !important;
+}
+
+/* Dark mode */
+.dark .album-delete-action-btn.ant-btn-primary.ant-btn-dangerous {
+    border-color: #f43f5e !important;
+    background: #e11d48 !important;
+    color: #ffffff !important;
+}
+
+.dark .album-move-action-btn.ant-btn-primary {
+    border-color: #3b82f6 !important;
+    background: #2563eb !important;
+    color: #ffffff !important;
+}
+
+/* Disabled */
+.album-delete-action-btn.ant-btn-disabled,
+.album-move-action-btn.ant-btn-disabled {
+    border-color: #d9d9d9 !important;
+    background: #f5f5f5 !important;
+    color: #a6a6a6 !important;
+}
+
+.dark .album-delete-action-btn.ant-btn-disabled,
+.dark .album-move-action-btn.ant-btn-disabled {
+    border-color: #334155 !important;
+    background: #1e293b !important;
+    color: #64748b !important;
+}

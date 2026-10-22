@@ -1,0 +1,83 @@
+/* Target the picture card container */
+.ant-upload-list-picture-card .ant-upload-list-item {
+  display: inline-block !important;
+  width: 50px !important;
+  /* Adjust the width as needed */
+  height: 50px !important;
+  /* Adjust the height as needed */
+  text-align: center !important;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item::before {
+  display: none !important;
+}
+
+/* Modify thumbnail image size */
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+  width: 100% !important;
+  /* Fill the container */
+  height: 100% !important;
+  /* Fill the container */
+  object-fit: cover;
+  /* Keep aspect ratio */
+}
+
+
+.ant-upload-list-item-container .ant-upload-list-item-actions {
+  position: inherit !important;
+  inset-inline-start: 0 !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  opacity: 1 !important;
+  transition: all 0.3s !important;
+  background: red !important;
+
+}
+
+.ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-actions .ant-upload-list-item-action {
+  opacity: 1;
+}
+
+.ant-upload-list-picture-card-container {
+  position: relative;
+}
+
+
+
+.ant-upload-list-item-actions {
+  display: none !important;
+  /* Remove default actions like preview */
+}
+
+.custom-delete-button:hover {
+  background-color: transparent !important;
+  color: red !important;
+  /* Keep the color the same on hover */
+  cursor: default;
+  /* Remove hover cursor */
+}
+
+.ant-upload-list-picture-card {
+  gap: 2 !important;
+  overflow-x: scroll;
+  overflow-y: none;
+
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-container {
+  display: block !important;
+  width: 50px !important;
+  height: 50px !important;
+  margin-top: 10px;
+}
+
+.ant-upload-list .ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-card,
+:where(.css-dev-only-do-not-override-1x0dypw).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-card,
+:where(.css-dev-only-do-not-override-1x0dypw).ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-circle,
+:where(.css-dev-only-do-not-override-1x0dypw).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-circle {
+  display: flex;
+  flex-wrap: nowrap;
+  display: none;
+}
